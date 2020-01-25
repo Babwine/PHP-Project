@@ -7,8 +7,21 @@
 </head>
 <body>
 
+
+	<h1>Games :</h1>
+	
 <?php
-  echo "Hello";
+	
+	$content =     file_get_contents("http://api.steampowered.com/ISteamApps/GetAppList/v0002/");
+
+	$result  = json_decode($content);
+
+	$applist = $result->applist->apps;
+	
+	foreach ($applist as $app) {
+		echo "<p>$app->name</p><br/>";
+	}
+
 ?>
 
 </body>
