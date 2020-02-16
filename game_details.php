@@ -13,7 +13,9 @@ include 'Model/GameModel.php';
 include 'Controller/GameController.php';
 include 'View/GameView.php';
 
-$controller = new GameController("./gameList.json");
+$data_location = "./gameList.json";
+
+$controller = new GameController($data_location);
 
 $controller->getGameById(htmlspecialchars($_GET['id']));
 

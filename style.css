@@ -44,6 +44,12 @@ body {
 	font-size: 12px;
 }
 
+.game-description {
+	margin-left: 10px;
+	padding: 10px;
+	border-left: 1px dotted black;
+}
+
 .title-home {
 	 background-color: #ffaf0f;
 }

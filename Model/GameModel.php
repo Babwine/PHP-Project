@@ -10,6 +10,7 @@ class GameModel {
   public $editor;
   public $developer;
   public $releaseDate;
+  public $description;
 
   public function __construct(
     int $id,
@@ -19,7 +20,8 @@ class GameModel {
     float $price,
     string $editor,
     string $developer,
-    string $releaseDate
+    string $releaseDate,
+    string $description
   )
   {
     $this->id = $id;
@@ -30,6 +32,7 @@ class GameModel {
     $this->editor = $editor;
     $this->developer = $developer;
     $this->releaseDate = $releaseDate;
+    $this->description = $description;
   }
 }
 

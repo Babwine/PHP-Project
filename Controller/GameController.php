@@ -23,7 +23,8 @@ class GameController {
         $game->price,
         $game->editor,
         $game->developer,
-        $game->releaseDate
+        $game->releaseDate,
+        $game->description
       );
       array_push($gameModelList, $model);
     }
@@ -54,7 +55,8 @@ class GameController {
         $theGame->price,
         $theGame->editor,
         $theGame->developer,
-        $theGame->releaseDate
+        $theGame->releaseDate,
+        $theGame->description
       );
       $gameView = new GameView($gameModel);
       $gameView->displayGame();

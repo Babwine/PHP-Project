@@ -13,13 +13,11 @@ include 'Model/GameModel.php';
 include 'Controller/GameController.php';
 include 'View/GameListView.php';
 
-$controller = new GameController("./gameList.json");
+$data_location = "./gameList.json";
+
+$controller = new GameController($data_location);
 
 $controller->getGameList();
-
-
-
-
 ?>
 
 </div>

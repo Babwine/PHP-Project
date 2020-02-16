@@ -7,7 +7,8 @@
       "price": 19.99,
       "editor": "Nintendo",
       "developer": "Sora",
-      "releaseDate": "31/01/2008"
+      "releaseDate": "31/01/2008",
+      "description" : "Super Smash Bros. Brawl rassemble des personnages issus de diverses franchises vidéoludiques. Il inclut pour la première fois des personnages venant d’éditeurs tiers, pour un nombre total plus important que son prédécesseur Super Smash Bros. Melee. Le but du jeu est d'éjecter un adversaire hors de l'écran. Brawl propose un mode aventure, l'Émissaire subspatial, dont le scénario met en scène les personnages présents dans le jeu. Il offre un mode multijoueur pouvant aller jusqu'à quatre joueurs, et est le premier opus de la série à permettre des combats en ligne avec la Nintendo Wi-Fi Connection."
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "price": 5.19,
       "editor": "Sony Computer Entertainment",
       "developer": "Naughty Dogs",
-      "releaseDate": "13/12/1998"
+      "releaseDate": "13/12/1998",
+      "description" : "L'histoire du jeu est la suite directe de son prédécesseur, Crash Bandicoot 2: Cortex Strikes Back. Les ruines d'une station spatiale appelée Cortex Vortex, appartenant au Docteur Neo Cortex, s'écrasent sur Terre et libèrent une entité maléfique connue sous le nom d'Uka Uka. Cette dernière, en collaboration avec Cortex et le Docteur Nefarious Tropy, prévoit de récupérer de puissants cristaux disséminés dans le temps et d'utiliser leur énergie pour dominer le monde. Le jeu suit les aventures de Crash Bandicoot et de sa sœur Coco dans leur voyage à travers le temps afin de récupérer les cristaux avant leurs ennemis. En effet, ce troisième opus de la série fait voyager les deux héros dans les différentes périodes du temps, allant de la Préhistoire au futur, en passant par le Moyen Âge, l'Atlantide et Bagdad."
     },{
       "id": 3,
       "name": "Pokémon Bouclier",
@@ -26,16 +28,28 @@
       "price": 44.49,
       "editor": "Nintendo",
       "developer": "Game Freak",
-      "releaseDate": "15/11/2019"
+      "releaseDate": "15/11/2019",
+      "description" : "L'action de Pokémon Bouclier se déroule dans une région fictive se nommant Galar où se mêlent campagnes, villes, forêts ou encore montagnes. Au cours de cette nouvelle aventure, les dresseurs peuvent visiter les différentes arènes de cette région, en quête du titre de Maître de la Ligue Pokémon de Galar."
     },{
       "id": 4,
       "name": "Minecraft",
       "imageUrl": "https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7d/Xbox_One_Edition_Cover.png",
-      "platform": "XBox One",
+      "platform": "PC/Mac/XBox One",
       "price": 19.99,
       "editor": "Mojang",
       "developer": "Mojang",
-      "releaseDate": "18/11/2011"
+      "releaseDate": "18/11/2011",
+      "description" : "Minecraft est un jeu vidéo de type « bac à sable » (construction complètement libre)."
+    },{
+      "id": 5,
+      "name": "Life Is Strange",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/LifeIsStrangeCapa.jpg/280px-LifeIsStrangeCapa.jpg",
+      "platform": "PC",
+      "price": 14.99,
+      "editor": "Square Enix",
+      "developer": "Dontnod Entertainment",
+      "releaseDate": "18/11/2011",
+      "description" : "L'intrigue de Life Is Strange tourne autour de Maxine « Max » Caulfield, une étudiante en photographie, à l'université de Blackwell, située à Arcadia Bay, une petite bourgade fictive de l'Oregon, qui découvre qu'elle a la faculté de revenir dans le temps sur de courtes périodes, ce qui lui permet de revenir sur les choix cornéliens de son aventure. Elle s'intéresse par la suite à la disparition d'une autre étudiante et retrouve son amie d'enfance, Chloe Price."
     }
   ]
 }
