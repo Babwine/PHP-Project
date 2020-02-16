@@ -12,20 +12,10 @@
 include 'Model/GameModel.php';
 include 'Controller/GameController.php';
 include 'View/GameView.php';
-include 'View/GameListView.php';
 
-$controller = new GameController();
-$controller->getGameList("./gameList.json");
+$controller = new GameController("./gameList.json");
 
-$game = $controller->getGameById($_GET['id']);
-
-
-
-$view = new GameView($game);
-
-$view->displayGame();
-
-
+$controller->getGameById(htmlspecialchars($_GET['id']));
 
 ?>
 

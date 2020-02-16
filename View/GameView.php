@@ -21,6 +21,10 @@ class GameView {
 
         echo "</div>";
         echo "<a href='catalogue.php'><button>Retour</button></a>";
+
+        echo "<script type='text/javascript'>
+                  document.title = '$game->name'
+              </script>";
   }
 
 }

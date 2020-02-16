@@ -27,6 +27,7 @@ class GameListView {
     }
 
     echo "</div>";
+
   }
 
 }

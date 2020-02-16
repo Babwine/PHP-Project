@@ -1,24 +1,46 @@
 <?php
 
 class GameController {
-  public $gameList;
+  private $gameDataFile;
 
-  public function getGameList($gameDataFile) {
-    $content = file_get_contents($gameDataFile, FILE_USE_INCLUDE_PATH);
+  public function __construct($gameDataFile) {
+    $this->gameDataFile = $gameDataFile;
+  }
+
+  public function getGameList() {
+    $content = file_get_contents($this->gameDataFile, FILE_USE_INCLUDE_PATH);
     $result  = json_decode($content);
 
-    $this->gameList = $result->games;
+    $gameList = $result->games;
 
-    return $this->gameList;
+    $gameModelList = array();
+    foreach ($gameList as $game) {
+      $model = new GameModel($game->id, $game->name, $game->imageUrl, $game->platform, $game->price);
+      array_push($gameModelList, $model);
+    }
+    $gameListView = new GameListView($gameModelList);
+
+    $gameListView->displayGameList();
   }
 
   public function getGameById(int $id) {
-    foreach ($this->gameList as $game) {
+    $content = file_get_contents($this->gameDataFile, FILE_USE_INCLUDE_PATH);
+    $result  = json_decode($content);
+
+    $gameList = $result->games;
+
+    $theGame = null;
+    foreach ($gameList as $game) {
       if ($game->id == $id) {
-        return $game;
+        $theGame = $game;
       }
     }
-    return null;
+
+    if ($theGame != null) {
+      $gameModel = new GameModel($theGame->id, $theGame->name, $theGame->imageUrl, $theGame->platform, $theGame->price);
+      $gameView = new GameView($gameModel);
+      $gameView->displayGame();
+    }
   }
 
 

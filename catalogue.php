@@ -11,22 +11,12 @@
 <?php
 include 'Model/GameModel.php';
 include 'Controller/GameController.php';
-include 'View/GameView.php';
 include 'View/GameListView.php';
 
-$controller = new GameController();
+$controller = new GameController("./gameList.json");
 
-$gameList = $controller->getGameList("./gameList.json");
+$controller->getGameList();
 
-$gameModelList = array();
-foreach ($gameList as $game) {
-  $model = new GameModel($game->id, $game->name, $game->imageUrl, $game->platform, $game->price);
-  array_push($gameModelList, $model);
-}
-
-$listView = new GameListView($gameModelList);
-
-$listView->displayGameList();
 
 
 
