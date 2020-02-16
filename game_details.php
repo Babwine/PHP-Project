@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Catalogue</title>
+  <title>Jeu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,18 +15,15 @@ include 'View/GameView.php';
 include 'View/GameListView.php';
 
 $controller = new GameController();
+$controller->getGameList("./gameList.json");
 
-$gameList = $controller->getGameList("./gameList.json");
+$game = $controller->getGameById($_GET['id']);
 
-$gameModelList = array();
-foreach ($gameList as $game) {
-  $model = new GameModel($game->id, $game->name, $game->imageUrl, $game->platform, $game->price);
-  array_push($gameModelList, $model);
-}
 
-$listView = new GameListView($gameModelList);
 
-$listView->displayGameList();
+$view = new GameView($game);
+
+$view->displayGame();
 
 
 
