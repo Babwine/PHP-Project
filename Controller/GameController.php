@@ -41,12 +41,12 @@ class GameController {
 
     $theGame = null;
     foreach ($gameList as $game) {
-      if ($game->id == $id) {
+      if ($game->id === $id) {
         $theGame = $game;
       }
     }
 
-    if ($theGame != null) {
+    if ($theGame !== null) {
       $gameModel = new GameModel(
         $theGame->id,
         $theGame->name,

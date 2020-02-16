@@ -29,7 +29,7 @@ class GameView {
           echo "<p class='game-description'>$game->description</p>";
 
         echo "</div>";
-        echo "<a href='catalogue.php'><button>Retour</button></a>";
+        echo "<a href='./index.php'><button>Retour</button></a>";
 
         echo "<script type='text/javascript'>
                   document.title = '$game->name'

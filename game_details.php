@@ -17,7 +17,12 @@ $data_location = "./gameList.json";
 
 $controller = new GameController($data_location);
 
-$controller->getGameById(htmlspecialchars($_GET['id']));
+$gameId = htmlspecialchars($_GET['id']);
+if ($gameId !== null && filter_var($gameId, FILTER_VALIDATE_INT) !== false) {
+  $controller->getGameById($gameId);
+} else {
+  echo "Aucun jeu trouvé.";
+}
 
 ?>
 
