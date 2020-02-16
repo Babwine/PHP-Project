@@ -2,7 +2,7 @@
 ## Master E-Services
 
 
-### Pierre PATTE
+### par Pierre PATTE
 
 Ce dépôt contient tous les fichiers liés au projet à rendre dans le cadre du cours de IFI - PHP.
 
