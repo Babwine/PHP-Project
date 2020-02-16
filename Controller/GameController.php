@@ -15,7 +15,16 @@ class GameController {
 
     $gameModelList = array();
     foreach ($gameList as $game) {
-      $model = new GameModel($game->id, $game->name, $game->imageUrl, $game->platform, $game->price);
+      $model = new GameModel(
+        $game->id,
+        $game->name,
+        $game->imageUrl,
+        $game->platform,
+        $game->price,
+        $game->editor,
+        $game->developer,
+        $game->releaseDate
+      );
       array_push($gameModelList, $model);
     }
     $gameListView = new GameListView($gameModelList);
@@ -37,7 +46,16 @@ class GameController {
     }
 
     if ($theGame != null) {
-      $gameModel = new GameModel($theGame->id, $theGame->name, $theGame->imageUrl, $theGame->platform, $theGame->price);
+      $gameModel = new GameModel(
+        $theGame->id,
+        $theGame->name,
+        $theGame->imageUrl,
+        $theGame->platform,
+        $theGame->price,
+        $theGame->editor,
+        $theGame->developer,
+        $theGame->releaseDate
+      );
       $gameView = new GameView($gameModel);
       $gameView->displayGame();
     }

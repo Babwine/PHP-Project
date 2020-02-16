@@ -4,26 +4,38 @@
       "name": "Super Smash Bros Brawl",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f3/SSBB_Cover.jpg",
       "platform": "Nintendo Wii",
-      "price": 19.99
+      "price": 19.99,
+      "editor": "Nintendo",
+      "developer": "Sora",
+      "releaseDate": "31/01/2008"
     },
     {
       "id": 2,
       "name": "Crash Bandicoot 3: Warped" ,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/uk/3/3e/Crash_Bandicoot_3.jpg",
       "platform": "Playstation 1",
-      "price": 5.19
+      "price": 5.19,
+      "editor": "Sony Computer Entertainment",
+      "developer": "Naughty Dogs",
+      "releaseDate": "13/12/1998"
     },{
       "id": 3,
       "name": "Pokémon Bouclier",
       "imageUrl": "https://s3.gaming-cdn.com/images/products/4076/271x377/pokemon-shield-switch-cover.jpg",
       "platform": "Nintendo Switch",
-      "price": 39.99
+      "price": 44.49,
+      "editor": "Nintendo",
+      "developer": "Game Freak",
+      "releaseDate": "15/11/2019"
     },{
       "id": 4,
       "name": "Minecraft",
       "imageUrl": "https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7d/Xbox_One_Edition_Cover.png",
       "platform": "XBox One",
-      "price": 19.99
+      "price": 19.99,
+      "editor": "Mojang",
+      "developer": "Mojang",
+      "releaseDate": "18/11/2011"
     }
   ]
 }

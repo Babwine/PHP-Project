@@ -33,6 +33,17 @@ body {
 	margin-left: 10px;
 }
 
+.game-price {
+	font-weight: normal;
+	color: rgb(100,0,0);
+	margin-left: 2px;
+}
+
+.game-details {
+	margin-left: 2px;
+	font-size: 12px;
+}
+
 .title-home {
 	 background-color: #ffaf0f;
 }
@@ -70,4 +81,33 @@ button:active {
 	color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
+}
+
+#game {
+		background-color: rgba(10,200,10,0.3);
+		border: 1px solid;
+		border-color: rgba(10,200,10,0.5);
+		margin-bottom: 10px;
+		min-height: 200px;
+		padding: 20px;
+		min-height: 400px;
+}
+
+
+#game > * {
+	display: inline-block;
+}
+
+#game > .game-img {
+	max-width: 400px;
+	max-height: 400px;
+}
+
+#game .game-name {
+	margin-left: 10px;
+	font-size: 40px;
+}
+
+#game .game-price {
+	margin-left: 20px;
 }

@@ -9,13 +9,18 @@ class GameView {
 
   public function displayGame() {
     $game = $this->gameModel;
-        echo "<div class='game'>";
+        echo "<div id='game'>";
           echo "<img class='game-img' src='$game->imageUrl' alt='$game->name'/>";
 
           echo "<div class='game-content'>";
 
             echo "<h2 class='game-name'>$game->name</h2>";
-            echo "<p class='game-price'>Prix : $game->price"."€</p>";
+            echo "<h3 class='game-price'>Prix : $game->price"."€</h3>";
+            echo "<ul class='game-details'>";
+              echo "<li class='game-editor'>Editeur : $game->editor</li>";
+              echo "<li class='game-developer'>Développeur : $game->developer</li>";
+              echo "<li class='game-release-date'>Date de sortie : $game->releaseDate</li>";
+            echo "</ul>";
 
           echo "</div>";
 

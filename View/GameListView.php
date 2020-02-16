@@ -18,7 +18,7 @@ class GameListView {
           echo "<div class='game-content'>";
 
             echo "<h2 class='game-name'>$game->name</h2>";
-            echo "<p class='game-price'>Prix : $game->price"."€</p>";
+            echo "<h3 class='game-price'>Prix : $game->price"."€</h3>";
 
           echo "</div>";
 
