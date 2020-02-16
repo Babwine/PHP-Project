@@ -6,7 +6,7 @@
 
 Ce dépôt contient tous les fichiers liés au projet à rendre dans le cadre du cours de IFI - PHP.
 
-## Decsription rapide
+## Description rapide
 
 L'application est un catalogue e-commerce listant des jeux vidéo. On peut afficher les détails d'un jeu en cliquant dessus.
 
@@ -21,3 +21,15 @@ php -S localhost:<port>
 ```
 
 Et d'ouvrir dans un navigateur l'URL `localhost:<port>`.
+
+# Description technique
+
+Il existe un contrôleur [GameController](./Controller/GameController.php).
+
+Il existe également un modèle [GameModel](./Model/GameModel.php).
+
+Enfin, il existe deux vues, [GameListView](./View/GameListView.php) et [GameView](./View/GameView.php), la première étant celle utilisée par le catalogue, et la seconde pour la page d'un jeu.
+
+L'application suit donc un pattern MVC très basique.
+
+Tout le style utilisé est disponible dans le fichier [style.css](./style.css).
